@@ -5,7 +5,7 @@ include_once("control.php");
 
 $model = new model();
 
-if(isset($_POST['submit']))
+if(isset($_POST['sender_submit']))
 {
     //sender
     $srcSender = $_POST['src_sender'];

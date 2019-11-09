@@ -1,6 +1,6 @@
 <?php
 
-include_once('Sign_Up.html');
+include_once('Sign-Up.html');
 include_once('control.php');
 
 if(isset($_POST["signup_submit"]))
