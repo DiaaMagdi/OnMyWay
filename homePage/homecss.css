@@ -1,0 +1,322 @@
+* 
+{
+  transition: .1s ease;
+  box-sizing: border-box;
+}
+body 
+{
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+/***************Navbar*****************/
+nav{
+    height: 44px;
+    background: #000;
+}
+.menu{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+}
+.menu ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li,
+.menu ul li a{
+    color: #fff;
+    line-height: 44px;
+    text-decoration: none;
+}
+.menu ul li a.menu-item{
+    transform: scale(1);
+    transition: 0.5s;
+    display: block;
+}
+.menu ul li a.menu-item.hide-item{
+    transform: scale(0);
+}
+.menu ul li:nth-child(2) a.menu-item.hide-item{
+    transition-delay: 0.6s;
+}
+.menu ul li:nth-child(3) a.menu-item.hide-item{
+    transition-delay: 0.5s;
+}
+.menu ul li:nth-child(4) a.menu-item.hide-item{
+    transition-delay: 0.4s;
+}
+.menu ul li:nth-child(5) a.menu-item.hide-item{
+    transition-delay: 0.3s;
+}
+.menu ul li:nth-child(6) a.menu-item.hide-item{
+    transition-delay: 0.2s;
+}
+.menu ul li:nth-child(7) a.menu-item.hide-item{
+    transition-delay: 0.1s;
+}
+.menu ul li:nth-child(8) a.menu-item.hide-item{
+    transition-delay: 0s;
+}
+.menu ul li:nth-child(2) a.menu-item{
+    transition-delay: 0.1s;
+}
+.menu ul li:nth-child(3) a.menu-item{
+    transition-delay: 0.2s;
+}
+.menu ul li:nth-child(4) a.menu-item{
+    transition-delay: 0.3s;
+}
+.menu ul li:nth-child(5) a.menu-item{
+    transition-delay: 0.4s;
+}
+.menu ul li:nth-child(6) a.menu-item{
+    transition-delay: 0.5s;
+}
+.menu ul li:nth-child(7) a.menu-item{
+    transition-delay: 0.6s;
+}
+
+.search-form{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(0);
+    width: 600px;
+    height: 44px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s;
+}
+.search-form.active{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+    transform: translateX(-50%);
+}
+.search-form input{
+    width: 100%;
+    height: 44px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.search-form input placeholder{
+    color: #fff;
+}
+.search-form:before{
+    content: '\f002';
+    position: absolute;
+    top: 12px;
+    left: -26px;
+    font-size: 18px;
+    color: #fff;
+    font-family: fontAwesome;
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 44px;
+    background: #000;
+    color: #fff;
+    line-height: 44px;
+    font-size: 18px;
+    text-align: right;
+    width: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+.close.active{
+    opacity: 1;
+    visibility: visible;
+}
+/********************************/
+
+/* Center website */
+.main {
+     margin: auto;
+}
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    height: 33.33%;
+    display: none;  /* Hide columns by default */
+}
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+/*******footer*************/
+.footer {
+  background-color: #070617;
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI',Tahoma,Geneva,Verdane,sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color:black;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color:black;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+.footer-copy{
+    width: 100%;
+    background: #fff;
+}
+
+.main-copy{
+  width: 100%;
+  max-width: 1000px;
+  padding: 10px 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-copy .footer_copy{
+    width: 100%;
+    color: #292F33;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer .col {
+    width: 50%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+  width: 100%;
+  }
+}/**********************/

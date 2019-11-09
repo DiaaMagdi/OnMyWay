@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 <!--- basic page needs
+	   ================================================== -->
+	        <meta charset="utf-8">
+	        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+	        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	        <title>Register  Page</title>
+
+	        <!-- CSS
+	   ================================================== -->
+	        <link rel="stylesheet" href="CSS/signUp.css"/>
+	        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+<!------------------------Start NavigationBar----------------------------------------------->
+
+		<nav>
+	        <div class="menu">
+	            <ul>
+	                <li><a href="homepage/Home.html" class="menu-item">Home</a></li>
+	                <li><a href="lOGIN.html" class="menu-item">Register</a></li>
+	                <li><a href="#" class="menu-item">Support</a></li>
+	                <li><a href="#" id="search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+	            </ul>
+		        <div class="search-form">
+		            <form>
+		             	<input type="text" name="" placeholder="Search">
+		            </form>
+		        </div>
+	            <a class="close"><i class="fa fa-times"></i></a>
+	        </div>
+        </nav>
+<!----------------------------End NavigationBar------------------------------------------->
+			<div class="container">
+			    <div class="wrap">
+			     	<div class="headings">
+			        	<a id="sign-in" href="#" class="active"><span>Log In</span></a>
+			        	<a id="sign-up" href="#"><span>Sign Up</span></a>
+			      	</div>
+			      	<div id="sign-in-form" class="sign-in-form">
+								        <form action="#" method="post" id="form">
+								          <label for="username">Username</label>
+								          <input id="username" type="text" name="username">
+
+								          <label for="password">Password</label>
+								          <input id="password" type="password" name="password">
+
+								          <input id="remember" type="checkbox">
+								          <label for="remember" id="rlabel">Keep me Signed in</label>
+
+								          <input type="submit" name="submit" value="Sign in" id="submit">
+								          <span id="Required" style="color:#ff0000;"></span>
+								          <span id="error" style="color:#ff0000"></span>
+								        </form>
+
+				        <footer>
+				          <div class="hr"></div>
+				          <div class="fp"><a href="">Forgot Password?</a></div>
+				        </footer>     
+			     	</div>
+				    <div id="sign-up-form">
+					        <form action="lOGIN.php" method="post">
+					            <label for="username">Full Name</label>
+					            <input type="text" name="username">
+
+					            <label for="visa">visa</label>
+				        	    <input id="visa" type="text" name="visa">
+
+
+ 							    <label for="Email">Email</label>
+							    <input type="email" name="emailaddress" multiple>
+
+					            <label for="password">Password</label>
+					            <input id="password" type="password" name="password">
+
+					            <label for="password0">Re-Enter Password</label>
+					            <input id="password0" type="password" name="password0">
+
+					           <div class="Radio">
+								  <div class="radio">
+								    <input id="radio-1" name="radio" type="radio" checked value="m">
+								    <label for="radio-1" class="radio-label">Male</label>
+								  </div>
+
+								  <div class="radio">
+								    <input id="radio-2" name="radio" type="radio" value="f">
+								    <label  for="radio-2" class="radio-label">Female</label>
+								  </div>
+								</div>
+
+								<div class="select customized-select">
+										<div class="select-field">
+											<input type="radio" name="select" id="Photographer" value="Photographer">
+											<label for="select-focus">Photographer</label>
+
+											<input type="radio" name="select" id="Editor" value="Editor">
+											<label for="select-focus">Editor</label>
+
+											<input type="radio" name="select" id="Model" value="Model">
+											<label for="select-focus">Model</label>
+
+											<input type="radio" name="select" id="Client" value="Client">
+											<label for="select-focus">Client</label>
+
+											<label class="select-placeholder" for="select-focus">Type of user</label>
+										</div>
+
+										<input id="select-focus" readonly type="text" class="select-options-focus" />
+										<div class="select-options">
+											<label for="Photographer">Photographer</label>
+											<label for="Editor">Editor</label>
+											<label for="Model">Model</label>
+											<label for="Client">Client</label>
+										</div>
+								</div>
+
+					          <input type="submit" name="submit" value="Create Account">
+					        </form>
+					</div>
+			    </div>
+			</div>
+
+			<!-- ==================================================JAVASCRIPT ================================================== -->
+			<script src="JS/jquery-3.3.1.min.js"></script>
+			<script src="JS/signUp.js"></script>
+	</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 <!--- basic page needs
+	   ================================================== -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+        <title>HELLO</title>
+
+	        <!-- CSS
+	   ================================================== -->
+        <link rel="stylesheet" href="Hello.css">
+        <link rel="stylesheet" href="CSS/signUp.css"/>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+    </head>
+	<body>
+
+<!-- --------------------------header again------------------------------------>
+
+    <header>
+            <div class="row">
+            <a class ="logo" href="to go.html"><img src="images/logo-01.svg"></a>
+                <ul class="main-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="Sign-Up.html">Sign-Up</a></li>
+                    <li><a href="login.html">LogIn..</a></li>
+                </ul>
+        </div>
+       
+    </header>
+   
+            <div class="login-box">
+                    <div class="wrap">
+                        <div class="headings">
+                            <a id="sign-in" href="#" class="active"><span>DRIVER</span></a>
+                            <a id="sign-up" href="#"><span>SENDER</span></a>
+                        </div>
+                        <div id="sign-in-form" class="sign-in-form">
+                            <form action="#" method="post" id="form">
+                                <label for="username">SRC</label>
+                                <input id="username" type="text" name="src_driver">
+            
+                                <label for="username">DESTINATION</label>
+                                <input id="username" type="text" name="dst_driver">
+                                
+                                <label for="username">NATIONAL_ID</label>
+                                <input id="username" type="text" name="id_driver">
+            
+                                <label for="username">PHONENUM</label>
+                                <input id="username" type="text" name="num_driver">
+            
+                                <input type="submit" name="search" value="SEARCH" id="submit">
+                                <span id="Required" style="color:#ff0000;"></span>
+                                <span id="error" style="color:#ff0000"></span>
+                            </form>
+            
+                        </div>
+                        <div id="sign-up-form">
+                            <form action="THANKS!.html" method="post">
+                                <label for="username">SRC</label>
+                                <input id="username" type="text" name="src_sender">
+            
+                                <label for="username">DESTINATION</label>
+                                <input id="username" type="text" name="dst_sender">
+                                
+                                <label for="username">NATIONAL_ID</label>
+                                <input id="username" type="text" name="id_sender">
+            
+                                <label for="username">PHONENUM</label>
+                                <input id="username" type="text" name="num_sender">
+            
+                                <label for="username">WIDTH</label>
+                                <input id="username" type="text" name="width_sender">
+            
+                                <label for="username">LENGTH</label>
+                                <input id="username" type="username" name="length_sender">
+            
+                                <div class="Radio">
+                                    <div class="radio">
+                                    <input id="radio-1" name="radio" type="radio" checked value="breakable">
+                                    <label for="radio-1" class="radio-label">BREAKABLE</label>
+                                    </div>
+            
+                                    <div class="radio">
+                                    <input id="radio-2" name="radio" type="radio" value="unbreakable">
+                                    <label  for="radio-2" class="radio-label">UNBREAKABLE</label>
+                                    </div>
+                                </div>
+            
+                                <input type="submit" name="sender_submit" value="submit" onclick="alert('THANKS!')">
+                            </form>
+                        </div>
+                    </div>
+                
+    </div>
+<!---------------------------------------- END HEADER ----------------------------------------------------->
+    
+    <!---------------fooooteerrr----------------->
+    <!--<div class="footer">
+        <div class="footer-copy">
+            <div class="main-copy">
+                <div class="footer_copy">
+                    &copy; 2019, All Rights Reserved To Developers&reg;Team
+                </div>
+            </div>
+        </div>
+    </div>-->
+        <!-------------------end footer-->
+
+			<!-- ==================================================JAVASCRIPT ================================================== -->
+			<script src="JS/jquery-3.3.1.min.js"></script>
+			<script src="JS/signUp.js"></script>
+	</body>
+</html>
